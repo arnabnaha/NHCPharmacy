@@ -1,0 +1,19 @@
+#$Id: .htaccess 989 2011-01-06 05:09:41Z michael.oscmax@gmail.com $
+#
+#  osCmax e-Commerce
+#  http://www.oscmax.com
+#
+#  Copyright 2000 - 2011 osCmax
+#
+#  Released under the GNU General Public License
+#
+# This file is used by Apache web servers.
+# 
+# It blocks direct HTTP requests to this directory recursively in order to
+# prevent access to logs via the web.
+
+<Files *.log>
+Order Deny,Allow
+Deny from all
+Allow from localhost
+</Files>
